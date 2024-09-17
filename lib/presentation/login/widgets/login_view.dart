@@ -4,7 +4,7 @@ import 'package:flutter_starter_project/core/constants/assets_constants.dart';
 import 'package:flutter_starter_project/core/l10n/localizations.dart';
 import 'package:flutter_starter_project/core/utils/ui/widgets/loading_with_text.dart';
 import 'package:flutter_starter_project/core/utils/ui/widgets/snackbar.dart';
-import 'package:flutter_starter_project/data/auth/models/models.dart';
+import 'package:flutter_starter_project/data/models/models.dart';
 import 'package:flutter_starter_project/presentation/home/pages/home_page.dart';
 import 'package:flutter_starter_project/presentation/login/blocs/auth_bloc.dart';
 import 'package:flutter_starter_project/presentation/login/widgets/login_form.dart';

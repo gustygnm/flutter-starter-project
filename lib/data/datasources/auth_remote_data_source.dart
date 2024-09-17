@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_starter_project/core/constants/api_path.dart';
-import 'package:flutter_starter_project/data/auth/models/models.dart';
-import 'package:flutter_starter_project/domain/auth/entities/entities.dart';
+import 'package:flutter_starter_project/data/models/models.dart';
+import 'package:flutter_starter_project/domain/entities/entities.dart';
 
 abstract class AuthRemoteDataSource {
   Future<LoginEntity> requestLogin(LoginBody body);

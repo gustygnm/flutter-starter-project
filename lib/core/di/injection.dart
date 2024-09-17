@@ -2,11 +2,11 @@ import 'package:flutter_starter_project/core/env/env_config.dart';
 import 'package:flutter_starter_project/core/network/http_client.dart';
 import 'package:flutter_starter_project/core/utils/services/notification.dart';
 import 'package:flutter_starter_project/core/utils/services/shared_prefs.dart';
-import 'package:flutter_starter_project/data/auth/datasources/auth_local_data_source.dart';
-import 'package:flutter_starter_project/data/auth/datasources/auth_remote_data_source.dart';
-import 'package:flutter_starter_project/data/auth/repositories/repository_impl.dart';
-import 'package:flutter_starter_project/domain/auth/repositories/repository.dart';
-import 'package:flutter_starter_project/domain/auth/usecases/usecase.dart';
+import 'package:flutter_starter_project/data/datasources/auth_local_data_source.dart';
+import 'package:flutter_starter_project/data/datasources/auth_remote_data_source.dart';
+import 'package:flutter_starter_project/data/repositories/repository_impl.dart';
+import 'package:flutter_starter_project/domain/repositories/repository.dart';
+import 'package:flutter_starter_project/domain/usecases/usecase.dart';
 import 'package:flutter_starter_project/presentation/login/blocs/auth_bloc.dart';
 import 'package:get_it/get_it.dart';
 
