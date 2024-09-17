@@ -44,7 +44,7 @@ class _LoginViewState extends State<LoginView> {
         }
 
         if (state is AuthSuccess) {
-          Get.offAllNamed<void>(DashboardPage.route);
+          Get.offAllNamed<void>(HomePage.route);
         }
       },
       builder: (context, state) {

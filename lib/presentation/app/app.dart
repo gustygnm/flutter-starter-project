@@ -23,7 +23,7 @@ class App extends StatelessWidget {
 
     String initialRoute() {
       if (isLogin) {
-        return DashboardPage.route;
+        return HomePage.route;
       } else {
         return LoginPage.route;
       }

@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class Palette {
   // Material UI Color Scheme
-  static const primaryColor = Color(0xFF2962ff);
-  static const primaryColorLight = Color(0xFF768fff);
-  static const primaryColorDark = Color(0xFF0039cb);
+  static const primaryColor = Color(0xFF16B3AC);
+  static const primaryColorLight = Color(0xffe1fbfa);
+  static const primaryColorDark = Color(0xff128f8a);
   static const primaryVariant = Color(0xFF0d47a1);
   static const secondaryColor = Color(0xFF1565c0);
   static const secondaryColorLight = Color(0xFF5e92f3);
@@ -29,10 +29,14 @@ class Palette {
   // App Color
   static const disabledColor = Color(0xFFF3F3F3);
   static const dividerColor = Colors.grey;
-  static const success = Color(0xFF28A745);
-  static const onSuccess = Color(0xFFD4EDDA);
-  static const danger = Color(0xFFDC3545);
-  static const onDanger = Color(0xFFF8D7DA);
-  static const warning = Color(0xFFFFC107);
-  static const onWarning = Color(0xFFFFF3CD);
+  static const success = Color(0xFF40AE87);
+  static const onSuccess = Color(0xFF9CD9C3);
+  static const danger = Color(0xFFFF3A39);
+  static const onDanger = Color(0xFFFF7575);
+  static const warning = Color(0xFFFFA705);
+  static const onWarning = Color(0xFFFFCB8B);
+  static const buttonPrimary = Color(0xFF16B3AC);
+  static const buttonSecondary = Color(0xFFE1FBFA);
+  static const buttonDisable = Color(0xFFE4E5E7);
+  static const buttonNegative = Color(0xFFFF3A39);
 }

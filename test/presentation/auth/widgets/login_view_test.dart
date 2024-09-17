@@ -115,7 +115,7 @@ void main() {
           ),
         ),
       );
-      expect(Get.currentRoute, DashboardPage.route);
+      expect(Get.currentRoute, HomePage.route);
     });
   });
 }

@@ -25,7 +25,7 @@ void main() {
 
       await mockNetworkImagesFor(() => tester.pumpWidget(App()));
 
-      expect(find.byType(DashboardPage), findsOneWidget);
+      expect(find.byType(HomePage), findsOneWidget);
     });
   });
 }

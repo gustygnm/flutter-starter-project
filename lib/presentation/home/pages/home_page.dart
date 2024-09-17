@@ -5,16 +5,16 @@ import 'package:flutter_starter_project/core/utils/services/shared_prefs.dart';
 import 'package:flutter_starter_project/core/utils/ui/widgets/empty.dart';
 import 'package:flutter_starter_project/presentation/login/pages/login_page.dart';
 
-class DashboardPage extends StatefulWidget {
-  const DashboardPage({Key? key}) : super(key: key);
+class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
 
-  static const route = '/dashboardPage';
+  static const route = '/home';
 
   @override
-  _DashboardPageState createState() => _DashboardPageState();
+  _HomePageState createState() => _HomePageState();
 }
 
-class _DashboardPageState extends State<DashboardPage> {
+class _HomePageState extends State<HomePage> {
   // Notificaion
   final notificationService = sl<NotificationService>();
 

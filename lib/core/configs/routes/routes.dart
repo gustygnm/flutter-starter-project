@@ -5,8 +5,8 @@ import 'package:get/route_manager.dart';
 class Routes {
   static List<GetPage> page = <GetPage>[
     GetPage<void>(
-      name: DashboardPage.route,
-      page: () => const DashboardPage(),
+      name: HomePage.route,
+      page: () => const HomePage(),
     ),
     GetPage<void>(
       name: LoginPage.route,
