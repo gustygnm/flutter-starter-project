@@ -1,6 +1,5 @@
 # Flutter Starter Project
 
-[![coverage report](https://gitlab.com/m-noer/meja-seni/badges/master/coverage.svg)](https://gitlab.com/m-noer/meja-seni/-/commits/master)
 [![style: very good analysis][very_good_analysis_badge]][very_good_analysis_link]
 [![License: MIT][license_badge]][license_link]
 
@@ -197,7 +196,6 @@ open coverage/index.html
 
 Go to the [Firebase Console](http://console.firebase.google.com/), and create a new project if you don’t have one already. Then navigate to **Quality > Test Lab**:
 
-![https://flutter.dev/assets/images/docs/integration-test/test-lab-1.png](https://flutter.dev/assets/images/docs/integration-test/test-lab-1.png)
 
 ### Uploading an Android APK
 
@@ -216,18 +214,12 @@ Where `<name>_test.dart` is the file created in the **Project Setup** sectio
 
 Drag the “debug” APK from `<flutter_project_directory>/build/app/outputs/apk/debug` into the **Android Robo Test** target on the web page. This starts a Robo test and allows you to run other tests:
 
-![https://flutter.dev/assets/images/docs/integration-test/test-lab-2.png](https://flutter.dev/assets/images/docs/integration-test/test-lab-2.png)
-
 Click **Run a test**, select the **Instrumentation** test type and drag the following two files:
 
 - `<flutter_project_directory>/build/app/outputs/apk/debug/<file>.apk`
 - `<flutter_project_directory>/build/app/outputs/apk/androidTest/debug/<file>.apk`
 
-![https://flutter.dev/assets/images/docs/integration-test/test-lab-3.png](https://flutter.dev/assets/images/docs/integration-test/test-lab-3.png)
-
 If a failure occurs, you can view the output by selecting the red icon
-
-![https://flutter.dev/assets/images/docs/integration-test/test-lab-4.png](https://flutter.dev/assets/images/docs/integration-test/test-lab-4.png)
 
 For more information read [Flutter Integration Firebase Test Lab](https://medium.com/flutterdevs/flutter-integration-tests-on-firebase-test-lab-b07bcd9f801f) or from flutter doc [Integration Testing](https://flutter.dev/docs/testing/integration-tests).
 
