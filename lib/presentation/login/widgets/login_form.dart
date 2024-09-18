@@ -1,6 +1,8 @@
 import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_starter_project/core/l10n/localizations.dart';
+import 'package:flutter_starter_project/core/utils/ui/button/button_primary.dart';
+import 'package:flutter_starter_project/core/utils/ui/text_field/common_textfield.dart';
 import 'package:form_field_validator/form_field_validator.dart';
 
 class FormLogin extends StatelessWidget {
@@ -31,10 +33,15 @@ class FormLogin extends StatelessWidget {
             style: Theme.of(context).textTheme.headlineLarge,
           ),
           const SizedBox(height: 20),
-          _UsernameField(
+          CommonTextField(
             key: const Key('usernameField'),
-            usernameController: usernameController,
-            labels: labels,
+            maxLength: 50,
+            controller: usernameController,
+            label: 'Email',
+            hint: 'Masukan email',
+            textInputType: TextInputType.text,
+            autoValidateMode: AutovalidateMode.onUserInteraction,
+            inputFormatter: const [],
           ),
           const SizedBox(height: 10),
           _PasswordField(
@@ -43,39 +50,12 @@ class FormLogin extends StatelessWidget {
             labels: labels,
           ),
           const SizedBox(height: 20),
-          ElevatedButton(
+          ButtonPrimary(
             key: const Key('loginBtn'),
-            onPressed: onLogin,
-            child: Text(labels.auth.login),
+            textValue: 'Login',
+            onTapButton: () => onLogin,
           ),
         ],
-      ),
-    );
-  }
-}
-
-class _UsernameField extends StatelessWidget {
-  const _UsernameField({
-    Key? key,
-    required this.usernameController,
-    required this.labels,
-  }) : super(key: key);
-
-  final TextEditingController usernameController;
-  final AppLocalizationsData labels;
-
-  @override
-  Widget build(BuildContext context) {
-    return TextFormField(
-      controller: usernameController,
-      decoration: InputDecoration(
-        hintText: labels.form.username,
-        prefixIcon: const Icon(FluentIcons.person_12_regular),
-      ),
-      autovalidateMode: AutovalidateMode.onUserInteraction,
-      textInputAction: TextInputAction.next,
-      validator: RequiredValidator(
-        errorText: labels.form.required.username,
       ),
     );
   }

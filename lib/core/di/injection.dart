@@ -45,7 +45,7 @@ Future<void> init() async {
   sl.registerLazySingleton(() => sl<HttpClient>().dio);
   sl.registerLazySingleton(() => HttpClient(config: sl(), preferences: sl()));
 
-  sl.registerLazySingleton(() => NotificationService());
+  sl.registerLazySingleton(NotificationService.new);
 
   //! External
 }

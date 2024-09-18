@@ -114,7 +114,7 @@ class CustomTheme {
     secondaryHeaderColor: Palette.secondaryColorDark,
     colorScheme: const ColorScheme(
       primary: Palette.primaryColor,
-      secondary: Palette.secondaryColor,
+      secondary: Palette.secondary,
       surface: Palette.surface,
       error: Palette.error,
       onPrimary: Palette.onPrimary,
@@ -125,7 +125,7 @@ class CustomTheme {
     ),
     textTheme: textTheme,
     disabledColor: Colors.grey,
-    dividerColor: Palette.dividerColor.withOpacity(0.5),
+    dividerColor: Palette.divider.withOpacity(0.5),
     hintColor: Colors.grey,
     appBarTheme: appbarTHeme,
     inputDecorationTheme: inputDecorationTheme,
@@ -158,7 +158,7 @@ class CustomTheme {
     secondaryHeaderColor: Palette.secondaryColorDark,
     colorScheme: const ColorScheme(
       primary: Palette.primaryColorLight,
-      secondary: Palette.secondaryColor,
+      secondary: Palette.secondary,
       surface: Palette.surfaceDark,
       error: Palette.error,
       onPrimary: Palette.onPrimary,
@@ -168,7 +168,7 @@ class CustomTheme {
       brightness: Brightness.dark,
     ),
     disabledColor: Palette.disabledColor,
-    dividerColor: Palette.dividerColor.withOpacity(0.5),
+    dividerColor: Palette.divider.withOpacity(0.5),
     hintColor: Colors.grey,
     textTheme: textTheme,
     appBarTheme: appbarTHeme.copyWith(

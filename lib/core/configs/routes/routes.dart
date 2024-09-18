@@ -10,7 +10,7 @@ class Routes {
     ),
     GetPage<void>(
       name: LoginPage.route,
-      page: () => LoginPage(),
+      page: LoginPage.new,
     ),
   ];
 }
