@@ -53,7 +53,7 @@ class FormLogin extends StatelessWidget {
           ButtonPrimary(
             key: const Key('loginBtn'),
             textValue: 'Login',
-            onTapButton: () => onLogin,
+            onTapButton: onLogin,
           ),
         ],
       ),
