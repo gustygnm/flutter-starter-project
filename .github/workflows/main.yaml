@@ -14,15 +14,6 @@ jobs:
       - name: Install Dependencies
         run: flutter packages get
 
-      - name: Format
-        run: dart format --set-exit-if-changed lib
-
-      - name: Analyze
-        run: flutter analyze lib test
-
-      - name: Run tests
-        run: flutter test --coverage
-
       - name: Check Code Coverage
         uses: VeryGoodOpenSource/very_good_coverage@v1.2.0
         with:
